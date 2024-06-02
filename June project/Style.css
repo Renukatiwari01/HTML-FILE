@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: black;
+}
+
+header {
+    padding: 20px 50px;
+    background: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    color: red;
+}
+
+.download-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    /* Ensure the button is on top of other elements */
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    /* Optional: Adds rounded corners to the container */
+}
+
+.download-button {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.download-button:hover {
+    background-color: #333;
+}
+
+
+
+main {
+    text-align: center;
+    padding: 50px;
+}
+
+.content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin: 20px 0;
+    color: gray;
+}
+
+.cta-buttons {
+    margin: 20px 0;
+}
+
+.cta-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.get-started-btn {
+    background: black;
+}
+
+.watch-video-btn {
+    background: red;
+}
+
+.phones {
+    position: relative;
+    width: 300PX;
+    height: 600px;
+    transform-origin: center center;
+        transition: transform 0.3s ease;
+
+   
+}
+
+.phone1 {
+    top: 0;
+    z-index: 3;
+transform: rotate(0deg);
+
+
+}
+.phone2 {
+    z-index: 1;
+    top: 50%;
+
+    transform: translateY(-50deg);
+}
+
+.phone3 {
+    z-index: 1;
+   
+    transform: rotateY(10deg);
+}
+.phone:hover {
+    transform: scale(1.1);
+    z-index: 4;
+}
+.features {
+    margin-top: 50px;
+}
+
+.feature {
+    margin: 20px 0;
+}
